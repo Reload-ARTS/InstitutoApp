@@ -40,6 +40,13 @@
             android:theme="@style/Theme.InstitutoApp">
         </activity>
 
+        <activity
+            android:name=".AddEventActivity"
+            android:exported="true"
+            android:label="@string/title_activity_add_event"
+            android:theme="@style/Theme.InstitutoApp">
+        </activity>
+
     </application>
 
 </manifest>
