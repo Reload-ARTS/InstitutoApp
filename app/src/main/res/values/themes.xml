@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Tema personalizado que hereda de Theme.AppCompat -->
+    <style name="Theme.InstitutoApp" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Personaliza tu tema aquí si es necesario -->
+    </style>
+
+</resources>
