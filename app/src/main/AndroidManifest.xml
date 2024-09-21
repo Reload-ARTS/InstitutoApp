@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
@@ -20,6 +21,7 @@
             android:theme="@style/Theme.InstitutoApp">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -30,6 +32,7 @@
             android:exported="true"
             android:label="@string/title_activity_welcome"
             android:theme="@style/Theme.InstitutoApp">
+
         </activity>
 
         <!-- Configuración de CalendarActivity -->
@@ -38,14 +41,28 @@
             android:exported="true"
             android:label="@string/title_activity_calendar"
             android:theme="@style/Theme.InstitutoApp">
-        </activity>
 
+        </activity>
         <activity
             android:name=".AddEventActivity"
             android:exported="true"
             android:label="@string/title_activity_add_event"
             android:theme="@style/Theme.InstitutoApp">
+
         </activity>
+        <activity
+            android:name=".NotasActivity"
+            android:exported="false"
+            android:label="@string/title_activity_notas"
+            android:theme="@style/Theme.InstitutoApp">
+
+        </activity>
+
+        <activity
+            android:name=".EvaluacionActivity"
+            android:exported="false"
+            android:label="@string/title_activity_evaluacion"
+            android:theme="@style/Theme.InstitutoApp" />
 
     </application>
 

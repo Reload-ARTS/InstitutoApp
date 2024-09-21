@@ -6,6 +6,8 @@ import android.widget.ImageButton
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
+
+
 class WelcomeActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -31,5 +33,23 @@ class WelcomeActivity : AppCompatActivity() {
             val intent = Intent(this, CalendarActivity::class.java)
             startActivity(intent)
         }
+
+        // Referencia al botón de Notas
+        val buttonNotas: ImageButton = findViewById(R.id.buttonNotas) // Asegúrate de que este ID sea correcto
+
+        // Configurar el listener para el botón de Notas
+        buttonNotas.setOnClickListener {
+            // Intent para abrir NotasActivity
+            val intent = Intent(this, NotasActivity::class.java)
+            startActivity(intent)
+        }
+
+
+        val buttonEvaluacion: ImageButton = findViewById(R.id.buttonEvaluacion)
+        buttonEvaluacion.setOnClickListener {
+            val intent = Intent(this, EvaluacionActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 }

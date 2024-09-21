@@ -36,4 +36,35 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/welcomeTextView" />
 
+    <!-- Botón de Notas -->
+    <ImageButton
+        android:id="@+id/buttonNotas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="3dp"
+        android:background="?attr/selectableItemBackground"
+        android:contentDescription="boton notas"
+        android:padding="16dp"
+        android:src="@drawable/boton_notas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCalendar" />
+
+    <!-- Botón de Evaluación Docente -->
+    <ImageButton
+        android:id="@+id/buttonEvaluacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="?attr/selectableItemBackground"
+        android:contentDescription="boton evaluacion docente"
+        android:padding="16dp"
+        android:src="@drawable/boton_docente"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonNotas" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
