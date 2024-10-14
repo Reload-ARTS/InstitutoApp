@@ -51,5 +51,11 @@ class WelcomeActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val buttonSede: ImageButton = findViewById(R.id.buttonSede)
+        buttonSede.setOnClickListener {
+            val intent = Intent(this, MapaActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 }

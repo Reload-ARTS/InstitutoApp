@@ -67,4 +67,22 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonNotas" />
 
+    <!-- Botón de Sede -->
+    <ImageButton
+        android:id="@+id/buttonSede"
+        android:layout_width="411dp"
+        android:layout_height="89dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="3dp"
+        android:background="?attr/selectableItemBackground"
+        android:contentDescription="boton sede"
+        android:padding="16dp"
+        android:src="@drawable/boton_sede"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonEvaluacion" />
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

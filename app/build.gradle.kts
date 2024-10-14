@@ -62,6 +62,10 @@ dependencies {
     implementation(libs.androidx.constraintlayout)
     implementation(libs.androidx.appcompat)
     implementation(libs.androidx.recyclerview)
+    // Dependencias de Version Catalogs para Google Play Services
+    implementation(libs.google.maps)
+    implementation(libs.google.location)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
