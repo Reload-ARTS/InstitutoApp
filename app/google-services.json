@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "227861708640",
+    "project_id": "institutoapp-54717",
+    "storage_bucket": "institutoapp-54717.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:227861708640:android:7a25222ca96d5bb91e2805",
+        "android_client_info": {
+          "package_name": "com.arts.institutoapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCevw3G8p2J01A7O8Lnwf7-rwbyz-ctL8s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

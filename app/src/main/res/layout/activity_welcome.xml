@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomeActivity">
+
+
+    <TextView
+        android:id="@+id/welcomeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:text="Bienvenido"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.127"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/buttonCalendar"
+        android:layout_width="412dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="64dp"
+        android:background="?attr/selectableItemBackground"
+        android:contentDescription="boton calendario"
+        android:padding="16dp"
+        android:src="@drawable/boton_calendar"
+        app:layout_constraintBottom_toTopOf="@+id/buttonNotas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeTextView" />
+
+    <!-- Botón de Notas -->
+    <ImageButton
+        android:id="@+id/buttonCertificado"
+        android:layout_width="412dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="3dp"
+        android:background="?attr/selectableItemBackground"
+        android:contentDescription="boton certificado"
+        android:padding="16dp"
+        android:src="@drawable/boton_certificado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCalendar" />
+
+    <!-- Botón de Notas -->
+    <ImageButton
+        android:id="@+id/buttonNotas"
+        android:layout_width="412dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="3dp"
+        android:background="?attr/selectableItemBackground"
+        android:contentDescription="boton notas"
+        android:padding="16dp"
+        android:src="@drawable/boton_notas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCertificado" />
+
+    <!-- Botón de Evaluación Docente -->
+    <ImageButton
+        android:id="@+id/buttonEvaluacion"
+        android:layout_width="412dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="4dp"
+        android:background="?attr/selectableItemBackground"
+        android:contentDescription="boton evaluacion docente"
+        android:padding="16dp"
+        android:src="@drawable/boton_docente"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonNotas" />
+
+    <!-- Botón de Sede -->
+    <ImageButton
+        android:id="@+id/buttonSede"
+        android:layout_width="412dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="3dp"
+        android:background="?attr/selectableItemBackground"
+        android:contentDescription="boton sede"
+        android:padding="16dp"
+        android:src="@drawable/boton_sede"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonEvaluacion" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">InstitutoApp</string>
+    <string name="logo_desc">Descripción del logo</string>
+    <string name="login_button_text">Iniciar Sesión</string>
+    <string name="hint_user_id">Usuario</string>
+    <string name="hint_password">Contraseña</string>
+    <string name="title_activity_welcome">WelcomeActivity</string>
+    <string name="title_activity_calendar">CalendarActivity</string>
+    <string name="title_activity_add_event">Add Event</string>
+    <string name="title_activity_notas">NotasActivity</string>
+    <string name="title_activity_evaluacion">EvaluacionActivity</string>
+    <string name="title_activity_mapa">Mapa</string>
+</resources>

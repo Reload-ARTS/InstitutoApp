@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Permisos de ubicación -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.InstitutoApp"
+        tools:targetApi="31">
+
+        <!-- Clave de API -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyB_6WvxoCM0TvDwXKEkv6kgMIBB3K8okts" />
+
+        <!-- MainActivity -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.InstitutoApp">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- WelcomeActivity -->
+        <activity
+            android:name=".WelcomeActivity"
+            android:exported="true"
+            android:label="@string/title_activity_welcome"
+            android:theme="@style/Theme.InstitutoApp" />
+
+        <!-- CalendarActivity -->
+        <activity
+            android:name=".CalendarActivity"
+            android:exported="true"
+            android:label="@string/title_activity_calendar"
+            android:theme="@style/Theme.InstitutoApp" />
+
+        <activity
+            android:name=".AddEventActivity"
+            android:exported="true"
+            android:label="@string/title_activity_add_event"
+            android:theme="@style/Theme.InstitutoApp" />
+
+        <!-- NotasActivity -->
+        <activity
+            android:name=".NotasActivity"
+            android:exported="false"
+            android:label="@string/title_activity_notas"
+            android:theme="@style/Theme.InstitutoApp" />
+
+        <!-- EvaluacionActivity -->
+        <activity
+            android:name=".EvaluacionActivity"
+            android:exported="false"
+            android:label="@string/title_activity_evaluacion"
+            android:theme="@style/Theme.InstitutoApp" />
+
+        <!-- MapaActivity -->
+        <activity
+            android:name=".MapaActivity"
+            android:exported="true"
+            android:label="@string/title_activity_mapa"
+            android:theme="@style/Theme.InstitutoApp" />
+
+        <!-- EditEventActivity -->
+        <activity
+            android:name=".EditEventActivity"
+            android:exported="true"
+            android:label="Editar Evento"
+            android:theme="@style/Theme.InstitutoApp" />
+
+        <!-- CertificadosActivity -->
+        <activity
+            android:name=".CertificadosActivity"
+            android:exported="true"
+            android:label="Certificados"
+            android:theme="@style/Theme.InstitutoApp" />
+
+    </application>
+
+</manifest>

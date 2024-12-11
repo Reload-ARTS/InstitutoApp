@@ -1,0 +1,83 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Solicitud de Certificados"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre Completo"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/txtRut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="RUT"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/txtCarrera"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Carrera"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/txtTelefono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Teléfono"
+                android:inputType="phone" />
+
+            <Spinner
+                android:id="@+id/spTipoCertificado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btnEnviar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="enviarDatosFirestore"
+                android:text="Enviar Solicitud" />
+
+            <EditText
+                android:id="@+id/txtRutBusqueda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ingrese RUT para buscar"
+                android:inputType="text"
+                android:layout_marginTop="16dp" />
+
+            <Button
+                android:id="@+id/btnEstadoSolicitud"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:text="Estado Solicitud"
+                android:onClick="buscarEstadoSolicitud" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
